@@ -133,5 +133,5 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # White listing the localhost:3000 port
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000','http://localhost:3001',"https://ocean-4-0-0.vercel.app/"
+    'http://localhost:3000','http://localhost:3001',"https://ocean-4-0-0.vercel.app"
 )
