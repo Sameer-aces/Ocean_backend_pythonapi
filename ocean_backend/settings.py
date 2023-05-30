@@ -76,7 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ocean_backend.wsgi.application'
 CORS_ALLOW_ALL_ORIGINS=True
-Access-Control-Allow-Origin= *
 
 
 
