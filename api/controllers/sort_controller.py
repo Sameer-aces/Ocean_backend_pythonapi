@@ -9,16 +9,16 @@ from api.services.sort_service import sort
 @api_view(['POST'])
 def sort_api(request):
     if request.method == 'POST':
-
+        print(request.body)
         # import the data from the frontend in bytes format
         body_data = request.body.decode('utf-8')
-
+        print(body_data)
         # convert the data into a json format as python dictionary type
         sort_dict = json.loads(body_data)
-
+        print(sort_dict,"ddddddddddddd")
         # print("=========================================================\n",
-        #   type(sort_dict), '\n ', sort_dict)
+        # type(sort_dict), '\n ', sort_dict)
         result = sort(action=tuple(sort_dict.values())[0], x=tuple(
             sort_dict.values())[1], y=tuple(sort_dict.values())[2])
-
+        print(type(result), 'type of results in sort')
         return JsonResponse(result, status=200)
